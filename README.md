@@ -25,7 +25,7 @@ Copy and paste this command to Termux :
 * Parrot 5.1.2 (Electro Ara)</br>
 (Armhf/Arm64/Amd64)
 ```
-pkg install wget -y && wget  && chmod +x  && ./
+pkg install wget -y && wget https://raw.githubusercontent.com/wahasa/Project/main/Linux/Parrot/parrot5.1.sh && chmod +x parrot5.1.sh && ./parrot5.1.sh
 ```
 
 2. Start Parrot
@@ -59,7 +59,7 @@ Visit problems now in : [Issues]()
 
 1. Start VNC Server
 
-on Ubuntu, run this command to start :
+on Parrot, run this command to start :
 ```
 vnc-start
 ```
@@ -75,14 +75,14 @@ localhost:1
 
 Name
 ```
-Ubuntu Desktop
+Parrot Desktop
 ```
 
 To disconnect VNC Client, click (X) on the right.
 
 3. Stop VNC Server
 
-on Ubuntu, run this command to stop :
+on Parrot, run this command to stop :
 ```
 vnc-stop
 ```
