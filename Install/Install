@@ -44,6 +44,10 @@ printf "${blu}Rootfs  ${red}: ${grn}Armhf,Arm64,Amd64"
 
 printf "\n\n"
 
+printf "${grn}To install run with : Install <${blu}Name${grn}>"
+
+printf "\n\n"
+
 	;;
 
         "Parrot5.3")
