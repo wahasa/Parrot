@@ -6,11 +6,6 @@
 ## Parrot on Termux Android
 
 ---
-Announcement :
-
-For Android 12 problems in [Termux v0.119.1](https://apkcombo.com/id/termux/com.termux) it has been fixed.
-
----
 • Install Apps on Android
 - [x] [Termux](https://apkcombo.com/id/termux/com.termux)
 - [x] [Vnc Viewer](https://play.google.com/store/apps/details?id=com.realvnc.viewer.android)
@@ -20,22 +15,24 @@ For Android 12 problems in [Termux v0.119.1](https://apkcombo.com/id/termux/com.
 Copy and paste this command to Termux :
 > pkg update && pkg upgrade
 
-1. Install Parrot
-
-* Parrot 5.1.2 (Electro Ara)</br>
-(Armhf/Arm64/Amd64)
+* Install Parrot
 ```
-pkg install wget -y && wget https://raw.githubusercontent.com/wahasa/Project/main/Linux/Parrot/parrot5.1.sh && chmod +x parrot5.1.sh && ./parrot5.1.sh
+pkg install wget -y && wget https://raw.githubusercontent.com/wahasa/Parrot/main/Install/Install ; chmod +x Install ; ./Install
 ```
 
-2. Start Parrot
+* Start Parrot
 ```
 parrot
 ```
 
-3. Stop Parrot
+* Stop Parrot
 ```
 exit
+```
+
+* Remove Parrot
+```
+rm -rf parrot-fs
 ```
 
 ---
