@@ -30,11 +30,30 @@ printf "${blu}Rootfs  ${red}: ${grn}Armhf,Arm64,Amd64"
 
 printf "\n\n"
 
+printf "${ylw}• Parrot (Electro Ara)"
+
+printf "\n\n"
+
+printf "${blu}Name    ${red}: ${grn}ParrotLts\n"
+
+printf "${blu}Version ${red}: ${grn}Lts\n"
+
+printf "${blu}Status  ${red}: ${grn}Latest\n"
+
+printf "${blu}Rootfs  ${red}: ${grn}Armhf,Arm64,Amd64"
+
+printf "\n\n"
+
 	;;
 
         "Parrot5.3")
 
 wget https://raw.githubusercontent.com/wahasa/Parrot/main/Install/parrot.sh ; chmod +x parrot.sh ; bash parrot.sh
+	;;
+
+        "ParrotLts")
+
+wget https://raw.githubusercontent.com/wahasa/Parrot/main/Install/parrot-lts.sh ; chmod +x parrot-lts.sh ; bash parrot-lts.sh
 
         ;;
 
