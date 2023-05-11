@@ -44,6 +44,49 @@ Basic commands Parrot
 > apt autoremove (pkg) : Delete package.</br>
 > apt -h : Help all commands.
 
+
+---
+## Desktop Environment
+
+on Ubuntu, run this command :
+> apt update && apt upgrade
+
+<details></br>
+<summary><b><code>Install Desktop Xfce</code></b></summary>
+<p align="center"><img src="https://raw.githubusercontent.com/wahasa/Ubuntu/main/Images/xfce.jpg"</p>
+</details>
+
+```
+apt install wget -y ; wget https://raw.githubusercontent.com/wahasa/Parrot/main/Desktop/de-xfce.sh ; chmod +x de-xfce.sh ; ./de-xfce.sh
+```
+
+<details></br>
+<summary><b><code>Install Desktop Lxde</code></b></summary>
+<p align="center"><img src="https://raw.githubusercontent.com/wahasa/Ubuntu/main/Images/lxde.jpg"</p>
+</details>
+
+```
+apt install wget -y ; wget https://raw.githubusercontent.com/wahasa/Parrot/main/Desktop/de-lxde.sh ; chmod +x de-lxde.sh ; ./de-lxde.sh
+```
+
+<details></br>
+<summary><b><code>Install Desktop Lxqt</code></b></summary>
+<p align="center"><img src="https://raw.githubusercontent.com/wahasa/Ubuntu/main/Images/lxqt.jpg"</p>
+</details>
+
+```
+apt install wget -y ; wget https://raw.githubusercontent.com/wahasa/Ubuntu/main/Desktop/de-lxqt.sh ; chmod +x de-lxqt.sh ; ./de-lxqt.sh
+```
+
+<details></br>
+<summary><b><code>Install Desktop Kde</code></b></summary>
+<p align="center"><img src="https://raw.githubusercontent.com/wahasa/Ubuntu/main/Images/kde.jpg"</p>
+</details>
+
+```
+apt install wget -y ; wget https://raw.githubusercontent.com/wahasa/Parrot/main/Desktop/de-kde.sh ; chmod +x de-kde.sh ; ./de-kde.sh
+```
+
 ---
 Note :
 - [x] Sound fix
