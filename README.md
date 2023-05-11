@@ -17,7 +17,7 @@ Copy and paste this command to Termux :
 
 * Install Parrot
 ```
-pkg install wget -y && wget https://raw.githubusercontent.com/wahasa/Parrot/main/install.sh ; chmod +x install.sh ; ./install.sh
+pkg install wget -y ; wget https://raw.githubusercontent.com/wahasa/Parrot/main/install.sh ; chmod +x install.sh ; ./install.sh
 ```
 
 * Start Parrot
@@ -75,7 +75,7 @@ apt install wget -y ; wget https://raw.githubusercontent.com/wahasa/Parrot/main/
 </details>
 
 ```
-apt install wget -y ; wget https://raw.githubusercontent.com/wahasa/Ubuntu/main/Desktop/de-lxqt.sh ; chmod +x de-lxqt.sh ; ./de-lxqt.sh
+apt install wget -y ; wget https://raw.githubusercontent.com/wahasa/Parrot/main/Desktop/de-lxqt.sh ; chmod +x de-lxqt.sh ; ./de-lxqt.sh
 ```
 
 <details></br>
@@ -92,7 +92,7 @@ Note :
 - [x] Sound fix
 - [x] Browser fix
 
-Visit problems now in : [Issues]()
+Visit problems now in : [Issues](https://github.com/wahasa/Parrot/issues)
 
 ---
 ## VNC Viewer
