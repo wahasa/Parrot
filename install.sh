@@ -2,7 +2,7 @@
 
 rm ../usr/bin/Install*
 
-wget https://raw.githubusercontent.com/wahasa/Ubuntu/main/Install/Install -P ../usr/bin/
+wget https://raw.githubusercontent.com/wahasa/Parrot/main/Install/Install -P ../usr/bin/
 
 chmod +x ../usr/bin/Install
 
