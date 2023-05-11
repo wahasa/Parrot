@@ -17,7 +17,7 @@ Copy and paste this command to Termux :
 
 * Install Parrot
 ```
-pkg install wget -y && wget https://raw.githubusercontent.com/wahasa/Parrot/main/Install/Install ; chmod +x Install ; ./Install
+pkg install wget -y && wget https://raw.githubusercontent.com/wahasa/Parrot/main/install.sh ; chmod +x install.sh ; ./install.sh
 ```
 
 * Start Parrot
