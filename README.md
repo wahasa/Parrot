@@ -88,9 +88,10 @@ apt install wget -y ; wget https://raw.githubusercontent.com/wahasa/Parrot/main/
 ```
 
 ---
-Note :
-- [x] Sound fix
-- [x] Browser fix
+Feature
+- [x] Fixed Sound
+- [x] Fixed Browser Crash
+- [x] Access to Sdcard
 
 Visit problems now in : [Issues](https://github.com/wahasa/Parrot/issues)
 
