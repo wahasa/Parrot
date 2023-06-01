@@ -53,7 +53,7 @@ on Ubuntu, run this command :
 
 <details></br>
 <summary><b><code>Install Desktop Xfce</code></b></summary>
-<p align="center"><img src="https://raw.githubusercontent.com/wahasa/Parrot/main/Images/xfce.jpg"</p>
+<p align="center"><img src="https://raw.githubusercontent.com/wahasa/Parrot/main/Image/xfce.jpg"</p>
 </details>
 
 ```
