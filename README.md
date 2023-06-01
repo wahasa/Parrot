@@ -53,7 +53,7 @@ on Ubuntu, run this command :
 
 <details></br>
 <summary><b><code>Install Desktop Xfce</code></b></summary>
-<p align="center"><img src="https://raw.githubusercontent.com/wahasa/Ubuntu/main/Images/xfce.jpg"</p>
+<p align="center"><img src="https://raw.githubusercontent.com/wahasa/Parrot/main/Images/xfce.jpg"</p>
 </details>
 
 ```
@@ -92,6 +92,7 @@ Feature
 - [x] Fixed Sound
 - [x] Fixed Browser Crash
 - [x] Access to Sdcard
+- [x] Install Applications [Click here,.](https://github.com/wahasa/Parrot/tree/main/Apps)
 
 Visit problems now in : [Issues](https://github.com/wahasa/Parrot/issues)
 
