@@ -32,7 +32,7 @@ exit
 
 * Remove Parrot
 ```
-rm -rf parrot-(arm64/armhf/amd64)
+rm -rf parrot-*
 ```
 
 ---
