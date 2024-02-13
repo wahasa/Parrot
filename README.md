@@ -13,11 +13,11 @@
 ## Installation
 
 Copy and paste this command to Termux :
-> pkg update && pkg upgrade
+> pkg update ; pkg upgrade
 
 * Install Parrot
 ```
-pkg install wget -y ; wget https://raw.githubusercontent.com/wahasa/Parrot/main/install.sh ; chmod +x install.sh ; ./install.sh
+pkg install wget -y ; wget ; chmod +x ; ./
 ```
 
 * Start Parrot
@@ -48,44 +48,49 @@ Basic commands Parrot
 ---
 ## Desktop Environment
 
-on Ubuntu, run this command :
-> apt update && apt upgrade
+on Parrot, run this command :
+> apt update ; apt upgrade
 
 <details></br>
 <summary><b><code>Install Desktop Xfce</code></b></summary>
-<p align="center"><img src="https://raw.githubusercontent.com/wahasa/Parrot/main/Image/xfce.jpg"</p>
-</details>
+
+![xfce](https://github.com/wahasa/Parrot/assets/69626847/2d5e0156-6f30-4518-9b8a-ccae486b7910)
 
 ```
 apt install wget -y ; wget https://raw.githubusercontent.com/wahasa/Parrot/main/Desktop/de-xfce.sh ; chmod +x de-xfce.sh ; ./de-xfce.sh
 ```
+</details>
 
 <details></br>
 <summary><b><code>Install Desktop Lxde</code></b></summary>
-<p align="center"><img src="https://raw.githubusercontent.com/wahasa/Parrot/main/Image/lxde.jpg"</p>
-</details>
+
+![lxde](https://github.com/wahasa/Parrot/assets/69626847/f73189ed-b0d6-4d56-8efb-103604de5aad)
 
 ```
 apt install wget -y ; wget https://raw.githubusercontent.com/wahasa/Parrot/main/Desktop/de-lxde.sh ; chmod +x de-lxde.sh ; ./de-lxde.sh
 ```
+</details>
 
 <details></br>
 <summary><b><code>Install Desktop Lxqt</code></b></summary>
-<p align="center"><img src="https://raw.githubusercontent.com/wahasa/Parrot/main/Image/lxqt.jpg"</p>
-</details>
+
+![lxqt](https://github.com/wahasa/Parrot/assets/69626847/c4f59008-78da-4ad9-ba72-4c7f1b9a2a75)
 
 ```
 apt install wget -y ; wget https://raw.githubusercontent.com/wahasa/Parrot/main/Desktop/de-lxqt.sh ; chmod +x de-lxqt.sh ; ./de-lxqt.sh
 ```
+</details>
 
 <details></br>
 <summary><b><code>Install Desktop Kde</code></b></summary>
-<p align="center"><img src="https://raw.githubusercontent.com/wahasa/Parrot/main/Image/kde.jpg"</p>
-</details>
+
+![kde](https://github.com/wahasa/Parrot/assets/69626847/44482c3d-5946-4882-bcad-941a6f1e1dad)
 
 ```
 apt install wget -y ; wget https://raw.githubusercontent.com/wahasa/Parrot/main/Desktop/de-kde.sh ; chmod +x de-kde.sh ; ./de-kde.sh
 ```
+</details>
+</br>
 
 ---
 Feature
