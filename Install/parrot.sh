@@ -99,11 +99,11 @@ pulseaudio --start \
 bash .parrot' > $PREFIX/bin/$linux
 chmod +x $PREFIX/bin/$linux
 #Repositories
-echo "#Parrot Electro Ara
-deb https://deb.parrot.sh/direct/parrot parrot main contrib non-free
-deb https://deb.parrot.sh/direct/parrot parrot-updates main contrib non-free
-deb https://deb.parrot.sh/direct/parrot parrot-security main contrib non-free
-deb https://deb.parrot.sh/direct/parrot parrot-backports main contrib non-free" > ~/"$folder"/etc/apt/sources.list
+#echo "#Parrot Development
+#deb https://deb.parrot.sh/direct/parrot parrot main contrib non-free
+#deb https://deb.parrot.sh/direct/parrot parrot-updates main contrib non-free
+#deb https://deb.parrot.sh/direct/parrot parrot-security main contrib non-free
+#deb https://deb.parrot.sh/direct/parrot parrot-backports main contrib non-free" > ~/"$folder"/etc/apt/sources.list
   clear
    echo ""
    echo "Updating Parrot,.."
