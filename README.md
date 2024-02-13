@@ -90,7 +90,6 @@ apt install wget -y ; wget https://raw.githubusercontent.com/wahasa/Parrot/main/
 apt install wget -y ; wget https://raw.githubusercontent.com/wahasa/Parrot/main/Desktop/de-kde.sh ; chmod +x de-kde.sh ; ./de-kde.sh
 ```
 </details>
-</br>
 
 ---
 Feature
