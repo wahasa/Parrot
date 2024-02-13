@@ -96,7 +96,8 @@ apt install wget -y ; wget https://raw.githubusercontent.com/wahasa/Parrot/main/
 Feature
 - [x] Fixed Sound
 - [x] Access to Sdcard
-- [x] Fixed Browser Crash
+- [x] Access to Termux-x11
+- [x] Fixed Browser Crash  | [Click here,.]()
 - [x] Install Applications [Click here,.](https://github.com/wahasa/Parrot/tree/main/Apps)
 
 Visit problems now in : [Issues](https://github.com/wahasa/Parrot/issues)
