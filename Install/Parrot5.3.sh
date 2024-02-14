@@ -2,6 +2,7 @@
 pkg install root-repo x11-repo
 pkg install proot pulseaudio -y
 termux-setup-storage
+parrot=lts
 version=5.3
                 case `dpkg --print-architecture` in
                 aarch64)
@@ -105,6 +106,7 @@ echo "#Parrot Repositories
 deb https://deb.parrot.sh/direct/parrot parrot main contrib non-free
 deb https://deb.parrot.sh/direct/parrot parrot-updates main contrib non-free
 deb https://deb.parrot.sh/direct/parrot parrot-security main contrib non-free
+deb https://deb.parrot.sh/direct/parrot parrot-wrap main contrib non-free
 deb https://deb.parrot.sh/direct/parrot parrot-backports main contrib non-free" > ~/"$folder"/etc/apt/sources.list
   clear
    echo ""
