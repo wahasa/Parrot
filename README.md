@@ -29,6 +29,7 @@ pkg install wget -y ; wget https://raw.githubusercontent.com/wahasa/Parrot/main/
 ```
 </details>
 
+---
 * Start Parrot
 ```
 parrot
@@ -55,7 +56,7 @@ Basic commands Parrot
 
 
 ---
-## Desktop Environment
+## Desktop Environments
 
 on Parrot, run this commands
 > apt update
@@ -113,7 +114,7 @@ Visit problems now in : [Issues](https://github.com/wahasa/Parrot/issues)
 ---
 ## VNC Viewer
 <details></br>
-<summary><b><code>VNC Viewer Android Kde</code></b></summary>
+<summary><b><code>VNC Viewer Android</code></b></summary>
 
 * Start VNC Server
 
@@ -149,7 +150,7 @@ vnc-stop
 ---
 ## Termux-x11
 <details></br>
-<summary><b><code>Termux-x11 Android Kde</code></b></summary>
+<summary><b><code>Termux-x11 Android</code></b></summary>
 
 </details>
 </br>
