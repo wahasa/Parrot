@@ -7,7 +7,6 @@
 
 * Uninstall Firefox
 > apt autoremove firefox-esr -y
-</br>
 
 ---
 #### Fixed firefox crash
