@@ -18,14 +18,14 @@ Copy and paste this commands to Termux
 <details></br>
 <summary><b><code>Install Parrot</code></b></summary>
 
+* Parrot 6.0 (Lorikeet)
+```
+pkg install wget -y ; wget https://raw.githubusercontent.com/wahasa/Parrot/main/Install/ParrotDev.sh ; chmod +x ParrotDev.sh ; ./ParrotDev.sh
+```
+
 * Parrot 5.3 (Electro Ara)
 ```
 pkg install wget -y ; wget https://raw.githubusercontent.com/wahasa/Parrot/main/Install/Parrot5.3.sh ; chmod +x Parrot5.3.sh ; ./Parrot5.3.sh
-```
-
-* Parrot 6.0 (Dev-Lorikeet)
-```
-pkg install wget -y ; wget https://raw.githubusercontent.com/wahasa/Parrot/main/Install/ParrotDev.sh ; chmod +x ParrotDev.sh ; ./ParrotDev.sh
 ```
 </details>
 
