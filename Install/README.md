@@ -7,4 +7,4 @@ Source Rootfs
 - https://mirrors.mit.edu/parrot/iso
 
 Repositories
-- https://deb.parrot.sh/direct/parrot
+- https://deb.parrot.sh/direct/parrot/dists
