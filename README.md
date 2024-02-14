@@ -107,7 +107,7 @@ Feature
 - [x] Access to Sdcard
 - [x] Access to Termux-x11
 - [x] Fixed Browser Crash  | [Click here,.]()
-- [x] Install Applications [Click here,.](https://github.com/wahasa/Parrot/tree/main/Apps)
+- [x] Install Applications | [Click here,.](https://github.com/wahasa/Parrot/tree/main/Apps)
 
 Visit problems now in : [Issues](https://github.com/wahasa/Parrot/issues)
 
