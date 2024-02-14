@@ -36,7 +36,7 @@ if [ "$first" != 1 ];then
                 *)
                         echo "unknown architecture"; exit 1 ;;
                 esac
-                wget "https://ftp.up.pt/parrot/iso/${version}/Parrot-rootfs-${version}_${archurl}.tar.xz" -O $tarball
+                wget "https://kartolo.sby.datautama.net.id/parrot/iso/${version}/Parrot-rootfs-${version}_${archurl}.tar.xz" -O $tarball
         fi
         cur=`pwd`
         echo "Decompressing Rootfs, please be patient."
@@ -65,7 +65,9 @@ if [ -n "\$(ls -A $folder/binds)" ]; then
     done
 fi
 command+=" -b /dev"
+command+=" -b /dev/null:/proc/sys/kernel/cap_last_cap"
 command+=" -b /proc"
+command+=" -b /data/data/com.termux/files/usr/tmp:/tmp"
 command+=" -b $folder/root:/dev/shm"
 ## uncomment the following line to have access to the home directory of termux
 #command+=" -b /data/data/com.termux/files/home:/root"
@@ -99,18 +101,19 @@ pulseaudio --start \
 bash .parrot' > $PREFIX/bin/$linux
 chmod +x $PREFIX/bin/$linux
 #Repositories
-echo "#Parrot Electro Ara
-deb https://deb.parrot.sh/direct/parrot lts main contrib non-free
-deb https://deb.parrot.sh/direct/parrot lts-updates main contrib non-free
-deb https://deb.parrot.sh/direct/parrot lts-security main contrib non-free
-deb https://deb.parrot.sh/direct/parrot lts-backports main contrib non-free" > ~/"$folder"/etc/apt/sources.list
+echo "#Parrot Repositories
+deb https://deb.parrot.sh/direct/parrot parrot main contrib non-free
+deb https://deb.parrot.sh/direct/parrot parrot-updates main contrib non-free
+deb https://deb.parrot.sh/direct/parrot parrot-security main contrib non-free
+deb https://deb.parrot.sh/direct/parrot parrot-backports main contrib non-free" > ~/"$folder"/etc/apt/sources.list
   clear
    echo ""
    echo "Updating Parrot,.."
    echo ""
 echo "#!/bin/bash
+touch ~/.hushlogin
 apt update && apt upgrade -y
-apt install dialog -y
+apt install dialog sudo -y
 rm -rf ~/.bash_profile
 exit" > $folder/root/.bash_profile
 bash $linux
@@ -118,4 +121,4 @@ bash $linux
    echo ""
    echo "You can now start Parrot with 'parrot' script next time"
    echo ""
-rm parrot-lts.sh
+#rm Parrot5.3.sh
