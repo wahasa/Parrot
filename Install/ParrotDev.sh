@@ -113,7 +113,7 @@ deb https://deb.parrot.sh/direct/parrot lory-backports main contrib non-free" > 
 echo "#!/bin/bash
 touch ~/.hushlogin
 apt update && apt upgrade -y
-apt install dialog -y
+apt install dialog sudo -y
 rm -rf ~/.bash_profile
 exit" > $folder/root/.bash_profile
 bash $linux
@@ -121,4 +121,4 @@ bash $linux
    echo ""
    echo "You can now start Parrot with 'parrot' script next time"
    echo ""
-rm ParrotDev.sh
+#rm ParrotDev.sh
