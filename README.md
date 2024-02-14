@@ -103,6 +103,8 @@ Visit problems now in : [Issues](https://github.com/wahasa/Parrot/issues)
 
 ---
 ## VNC Viewer
+<details></br>
+<summary><b><code>VNC Viewer Android Kde</code></b></summary>
 
 * Start VNC Server
 
@@ -133,7 +135,14 @@ on Parrot, run this command to stop :
 ```
 vnc-stop
 ```
+</details>
 
+---
+## Termux-x11
+<details></br>
+<summary><b><code>Termux-x11 Android Kde</code></b></summary>
+
+</details>
 </br>
 
 ---
