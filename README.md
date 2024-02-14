@@ -12,7 +12,7 @@
 
 ## Installation
 
-Copy and paste this command to Termux :
+Copy and paste this commands to Termux
 > pkg update
 
 <details></br>
@@ -57,8 +57,8 @@ Basic commands Parrot
 ---
 ## Desktop Environment
 
-on Parrot, run this command :
-> apt update ; apt upgrade
+on Parrot, run this commands
+> apt update
 
 <details></br>
 <summary><b><code>Install Desktop Xfce</code></b></summary>
@@ -117,7 +117,7 @@ Visit problems now in : [Issues](https://github.com/wahasa/Parrot/issues)
 
 * Start VNC Server
 
-on Parrot, run this command to start :
+on Parrot, run this command to start
 ```
 vnc-start
 ```
@@ -140,7 +140,7 @@ To disconnect VNC Client, click (X) on the right.
 
 * Stop VNC Server
 
-on Parrot, run this command to stop :
+on Parrot, run this command to stop
 ```
 vnc-stop
 ```
