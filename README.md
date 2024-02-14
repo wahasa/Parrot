@@ -23,7 +23,7 @@ Copy and paste this commands to Termux
 pkg install wget -y ; wget https://raw.githubusercontent.com/wahasa/Parrot/main/Install/Parrot5.3.sh ; chmod +x Parrot5.3.sh ; ./Parrot5.3.sh
 ```
 
-* Parrot Dev (6-Lorikeet)
+* Parrot 6.0 (Dev-Lorikeet)
 ```
 pkg install wget -y ; wget https://raw.githubusercontent.com/wahasa/Parrot/main/Install/ParrotDev.sh ; chmod +x ParrotDev.sh ; ./ParrotDev.sh
 ```
