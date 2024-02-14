@@ -1,6 +1,6 @@
 ---
 Parrot Releases
-- https://parrotsec.org/download
+- https://parrotsec.org/blog
 
 Source Rootfs
 - https://kartolo.sby.datautama.net.id/parrot/iso
