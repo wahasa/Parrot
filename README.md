@@ -106,7 +106,7 @@ Feature
 - [x] Fixed Sound
 - [x] Access to Sdcard
 - [x] Access to Termux-x11
-- [x] Fixed Browser Crash  | [Click here,.]()
+- [x] Fixed Browser Crash  | [Click here,.](https://github.com/wahasa/Parrot/tree/main/Note)
 - [x] Install Applications | [Click here,.](https://github.com/wahasa/Parrot/tree/main/Apps)
 
 Visit problems now in : [Issues](https://github.com/wahasa/Parrot/issues)
