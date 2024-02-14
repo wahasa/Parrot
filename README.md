@@ -13,12 +13,21 @@
 ## Installation
 
 Copy and paste this command to Termux :
-> pkg update ; pkg upgrade
+> pkg update
 
-* Install Parrot
+<details></br>
+<summary><b><code>Install Parrot</code></b></summary>
+
+* Parrot 5.3 (Electro Ara)
 ```
-pkg install wget -y ; wget ; chmod +x ; ./
+pkg install wget -y ; wget https://raw.githubusercontent.com/wahasa/Parrot/main/Install/Parrot5.3.sh ; chmod +x Parrot5.3.sh ; ./Parrot5.3.sh
 ```
+
+* Parrot Dev (6-Lorikeet)
+```
+pkg install wget -y ; wget https://raw.githubusercontent.com/wahasa/Parrot/main/Install/ParrotDev.sh ; chmod +x ParrotDev.sh ; ./ParrotDev.sh
+```
+</details>
 
 * Start Parrot
 ```
