@@ -3,6 +3,7 @@ pkg install root-repo x11-repo
 pkg install proot pulseaudio -y
 termux-setup-storage
 version=5.3
+#Checking Architecture
                 case `dpkg --print-architecture` in
                 aarch64)
                         device="arm64" ;;
@@ -51,6 +52,9 @@ linux=parrot
 echo "writing launch script"
 cat > $bin <<- EOM
 #!/bin/bash
+pulseaudio --start \
+    --load="module-native-protocol-tcp auth-ip-acl=127.0.0.1 auth-anonymous=1" \
+    --exit-idle-time=-1
 cd \$(dirname \$0)
 ## unset LD_PRELOAD in case termux-exec is installed
 unset LD_PRELOAD
@@ -93,20 +97,16 @@ EOM
    chmod +x $bin
    #Removing image for some space"
    rm $tarball
-#Sound Fix
-echo '#!/bin/bash
-pulseaudio --start \
-    --load="module-native-protocol-tcp auth-ip-acl=127.0.0.1 auth-anonymous=1" \
-    --exit-idle-time=-1
-bash .parrot' > $PREFIX/bin/$linux
-chmod +x $PREFIX/bin/$linux
 #Repositories
 echo "#Parrot Development
 deb https://deb.parrot.sh/direct/parrot lory main contrib non-free
 deb https://deb.parrot.sh/direct/parrot lory-updates main contrib non-free
 deb https://deb.parrot.sh/direct/parrot lory-security main contrib non-free
 deb https://deb.parrot.sh/direct/parrot lory-backports main contrib non-free" > ~/"$folder"/etc/apt/sources.list
-  clear
+echo '#!/bin/bash
+bash .parrot' > $PREFIX/bin/$linux
+chmod +x $PREFIX/bin/$linux
+   clear
    echo ""
    echo "Updating Parrot,.."
    echo ""
