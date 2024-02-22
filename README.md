@@ -18,12 +18,14 @@ Copy and paste this commands to Termux
 <details></br>
 <summary><b><code>Install Parrot</code></b></summary>
 
-* Parrot 6.0 (Lorikeet)
+#### Parrot 6.0 (Lorikeet)
+Rootfs : Armhf, Arm64, i386, Amd64
 ```
 pkg install wget -y ; wget https://raw.githubusercontent.com/wahasa/Parrot/main/Install/ParrotDev.sh ; chmod +x ParrotDev.sh ; ./ParrotDev.sh
 ```
 
-* Parrot 5.3 (Electro Ara)
+#### Parrot 5.3 (Electro Ara)
+Rootfs : Armhf, Arm64, i386, Amd64
 ```
 pkg install wget -y ; wget https://raw.githubusercontent.com/wahasa/Parrot/main/Install/Parrot5.3.sh ; chmod +x Parrot5.3.sh ; ./Parrot5.3.sh
 ```
@@ -106,8 +108,8 @@ Feature
 - [x] Fixed Sound
 - [x] Access to Sdcard
 - [x] Access to Termux-x11
-- [x] Fixed Browser Crash  | [Click here,.](https://github.com/wahasa/Parrot/tree/main/Note)
-- [x] Install Applications | [Click here,.](https://github.com/wahasa/Parrot/tree/main/Apps)
+- [x] Fixed Browser Crash  | [Click Here >](https://github.com/wahasa/Parrot/tree/main/Note)
+- [x] Install Applications | [Click Here >](https://github.com/wahasa/Parrot/tree/main/Apps)
 
 Visit problems now in : [Issues](https://github.com/wahasa/Parrot/issues)
 
