@@ -11,12 +11,10 @@
 - [x] [Vnc Viewer](https://play.google.com/store/apps/details?id=com.realvnc.viewer.android)
 
 ## Installation
-
 Copy and paste this commands to Termux
 > pkg update
 
-<details></br>
-<summary><b><code>Install Parrot</code></b></summary>
+<details><summary><b><code>Install Parrot</code></b></summary>
 
 #### Parrot 6.0 (Lorikeet)
 Rootfs : Armhf, Arm64, i386, Amd64
@@ -42,7 +40,7 @@ parrot
 exit
 ```
 
-* Remove Parrot
+* Delete Parrot
 ```
 rm -rf parrot-*
 ```
@@ -53,51 +51,41 @@ Basic commands Parrot
 > apt upgrade : Upgrade package.</br>
 > apt search (pkg) : Search package.</br>
 > apt install (pkg) : Install package.</br>
-> apt autoremove (pkg) : Delete package.</br>
+> apt autoremove (pkg) : Delete pkg.</br>
 > apt -h : Help all commands.
-
 
 ---
 ## Desktop Environments
-
 on Parrot, run this commands
 > apt update
 
-<details></br>
-<summary><b><code>Install Xfce Desktop</code></b></summary>
+<details><summary><b><code>Install Xfce Desktop</code></b></summary>
 
 ![xfce](https://github.com/wahasa/Parrot/assets/69626847/2d5e0156-6f30-4518-9b8a-ccae486b7910)
-
 ```
 apt install wget -y ; wget https://raw.githubusercontent.com/wahasa/Parrot/main/Desktop/de-xfce.sh ; chmod +x de-xfce.sh ; ./de-xfce.sh
 ```
 </details>
 
-<details></br>
-<summary><b><code>Install Lxde Desktop</code></b></summary>
+<details><summary><b><code>Install Lxde Desktop</code></b></summary>
 
 ![lxde](https://github.com/wahasa/Parrot/assets/69626847/f73189ed-b0d6-4d56-8efb-103604de5aad)
-
 ```
 apt install wget -y ; wget https://raw.githubusercontent.com/wahasa/Parrot/main/Desktop/de-lxde.sh ; chmod +x de-lxde.sh ; ./de-lxde.sh
 ```
 </details>
 
-<details></br>
-<summary><b><code>Install Lxqt Desktop</code></b></summary>
+<details><summary><b><code>Install Lxqt Desktop</code></b></summary>
 
 ![lxqt](https://github.com/wahasa/Parrot/assets/69626847/c4f59008-78da-4ad9-ba72-4c7f1b9a2a75)
-
 ```
 apt install wget -y ; wget https://raw.githubusercontent.com/wahasa/Parrot/main/Desktop/de-lxqt.sh ; chmod +x de-lxqt.sh ; ./de-lxqt.sh
 ```
 </details>
 
-<details></br>
-<summary><b><code>Install Kde Desktop</code></b></summary>
+<details><summary><b><code>Install Kde Desktop</code></b></summary>
 
 ![kde](https://github.com/wahasa/Parrot/assets/69626847/44482c3d-5946-4882-bcad-941a6f1e1dad)
-
 ```
 apt install wget -y ; wget https://raw.githubusercontent.com/wahasa/Parrot/main/Desktop/de-kde.sh ; chmod +x de-kde.sh ; ./de-kde.sh
 ```
