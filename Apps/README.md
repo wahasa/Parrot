@@ -90,7 +90,7 @@ sudo apt install krita
 ####
 <details><summary><code><b>Libre Office</b></code></summary>
 
-![Screenshot_2024-01-19-12-19-03-463_com realvnc viewer android](https://github.com/wahasa/Kali-Nethunter/assets/69626847/7eecadc8-06bc-4587-a9a2-986346da6e72)
+![Screenshot_2024-02-25-14-56-33-049_com realvnc viewer android](https://github.com/wahasa/Kali-Nethunter/assets/69626847/4b06ace7-63a2-46b9-87e3-2a697ec65761)
 ```
 wget https://raw.githubusercontent.com/wahasa/Parrot/main/libreofficefix.sh ; chmod +x libreofficefix.sh ; ./libreofficefix.sh
 ```
@@ -136,7 +136,7 @@ sudo apt install vim
 ####
 <details><summary><code><b>VS Code</b></code></summary>
 
-![Screenshot_2024-01-19-11-58-48-380_com realvnc viewer android](https://github.com/wahasa/Kali-Nethunter/assets/69626847/27b096ab-8287-4f29-92a7-2aaaaab5f204)
+![Screenshot_2024-02-25-14-58-50-635_com realvnc viewer android](https://github.com/wahasa/Kali-Nethunter/assets/69626847/e1017552-7765-4330-a47c-69f7bdf869ca)
 ```
 wget https://raw.githubusercontent.com/wahasa/Parrot/main/vscodefix.sh ; chmod +x vscodefix.sh ; ./vscodefix.sh
 ```
