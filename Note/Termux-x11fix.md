@@ -60,6 +60,11 @@ startxfce4
 # --END-- #
 ```
 
+Save : ctrl + x, click Y enter.
+
+Note :</br>
+Remove the sign (#) on the desktop you are installing now.
+
 * Enable script
 ```
 chmod +x /usr/local/bin/termux-x11
