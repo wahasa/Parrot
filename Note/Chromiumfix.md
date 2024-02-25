@@ -1,5 +1,5 @@
 ### Fixed Chromium Parrot
-![Screenshot_2024-01-19-08-55-00-062_com realvnc viewer android](https://github.com/wahasa/Kali-Nethunter/assets/69626847/8e8206f1-fb6f-4b7b-b571-30c81182c8b5)
+![Screenshot_2024-02-25-12-13-26-611_com realvnc viewer android](https://github.com/wahasa/Kali-Nethunter/assets/69626847/f1733632-66cb-48bc-abea-06b1452a8f8e)
 
 ---
 * Install Chromium
