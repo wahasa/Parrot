@@ -11,7 +11,7 @@ sudo apt install blender
 ####
 <details><summary><code><b>Chromium</b></code></summary>
 
-![Screenshot_2024-01-19-08-55-00-062_com realvnc viewer android](https://github.com/wahasa/Kali-Nethunter/assets/69626847/8e8206f1-fb6f-4b7b-b571-30c81182c8b5)
+![Screenshot_2024-02-25-12-13-26-611_com realvnc viewer android](https://github.com/wahasa/Kali-Nethunter/assets/69626847/f1733632-66cb-48bc-abea-06b1452a8f8e)
 
 [> Click Here <](https://github.com/wahasa/Parrot/blob/main/Note/Chromiumfix.md)
 </details>
@@ -19,7 +19,7 @@ sudo apt install blender
 ####
 <details><summary><code><b>Firefox</b></code></summary>
 
-![Screenshot_2024-01-19-08-26-52-107_com realvnc viewer android](https://github.com/wahasa/Kali-Nethunter/assets/69626847/3c1f5397-2e82-4cea-9764-8e27bcd7f6ef)
+![Screenshot_2024-02-25-12-14-31-587_com realvnc viewer android](https://github.com/wahasa/Kali-Nethunter/assets/69626847/2fe3c8bc-a5d9-4a59-ac74-a0f756d9ebd7)
 
 [> Click Here <](https://github.com/wahasa/Parrot/blob/main/Note/Firefoxfix.md)
 </details>
@@ -109,7 +109,7 @@ sudo apt install lollypop
 <details>
 <summary><code><b>OBS Studio</b></code></summary>
 
-![Screenshot_2024-01-24-07-58-29-384_com realvnc viewer android](https://github.com/wahasa/Kali-Nethunter/assets/69626847/b4f8d39a-15de-4899-9fcc-12d372789924)
+![Screenshot_2024-02-25-12-17-01-291_com realvnc viewer android](https://github.com/wahasa/Kali-Nethunter/assets/69626847/f08dc990-7b19-41af-ac2c-c88600e88ca5)
 ```
 sudo apt install obs-studio
 ```
