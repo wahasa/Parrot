@@ -1,7 +1,6 @@
 ### Termux-x11 Parrot
 
 ![Screenshot_2024-02-18-19-21-29-654_com termux x11](https://github.com/wahasa/Parrot/assets/69626847/b799a6c9-5b87-4dd9-a0b9-c9874a9e2c35)
-<p align="center">Termux-x11</p>
 
 ---
 #### Commands in Termux
