@@ -36,7 +36,7 @@ sudo apt install gnome-games
 ####
 <details><summary><code><b>Gdebi</b></code></summary>
 
-![Screenshot_2024-01-23-14-14-05-342_com realvnc viewer android](https://github.com/wahasa/Kali-Nethunter/assets/69626847/b38d5456-4196-45fc-9ec3-ac4d4d1a5adb)
+![Screenshot_2024-02-25-13-32-18-552_com realvnc viewer android](https://github.com/wahasa/Kali-Nethunter/assets/69626847/59c477c5-5e5e-49de-8355-f18dc3135e47)
 ```
 sudo apt install gdebi
 ```
@@ -54,7 +54,7 @@ sudo apt install gedit
 ####
 <details><summary><code><b>GIMP</b></code></summary>
 
-![Screenshot_2024-01-23-14-24-11-310_com realvnc viewer android](https://github.com/wahasa/Kali-Nethunter/assets/69626847/981ef170-23c4-48da-8cb1-c843d30f9db4)
+![Screenshot_2024-02-25-13-34-27-393_com realvnc viewer android](https://github.com/wahasa/Kali-Nethunter/assets/69626847/973960ac-dba8-44c9-a8e5-e9cb174448c0)
 ```
 sudo apt install gimp
 ```
@@ -63,7 +63,7 @@ sudo apt install gimp
 ####
 <details><summary><code><b>Inkscape</b></code></summary>
 
-![Screenshot_2024-01-23-14-45-01-249_com realvnc viewer android](https://github.com/wahasa/Kali-Nethunter/assets/69626847/70f8ffa0-cd2f-4a51-9c4d-ffc6c9756418)
+![Screenshot_2024-02-25-13-35-31-167_com realvnc viewer android](https://github.com/wahasa/Kali-Nethunter/assets/69626847/c9d68b0a-beea-4235-9e15-bd87dbf4cca5)
 ```
 sudo apt install inkscape
 ```
@@ -72,7 +72,7 @@ sudo apt install inkscape
 ####
 <details><summary><code><b>Kdenlive</b></code></summary>
 
-![Screenshot_2024-01-24-11-27-23-244_com realvnc viewer android](https://github.com/wahasa/Kali-Nethunter/assets/69626847/9e530191-3cb4-4ae6-b5bf-7505bf8992fc)
+![Screenshot_2024-02-25-13-41-35-534_com realvnc viewer android](https://github.com/wahasa/Kali-Nethunter/assets/69626847/367a0c90-0fc0-40ae-ab00-506a3aab32c0)
 ```
 sudo apt install kdenlive
 ```
@@ -81,7 +81,7 @@ sudo apt install kdenlive
 ####
 <details><summary><code><b>Krita</b></code></summary>
 
-![Screenshot_2024-01-24-11-33-35-915_com realvnc viewer android](https://github.com/wahasa/Kali-Nethunter/assets/69626847/f5173d78-9d89-4bf5-848d-318f62c7519d)
+![Screenshot_2024-02-25-13-39-45-975_com realvnc viewer android](https://github.com/wahasa/Kali-Nethunter/assets/69626847/ecf55dc7-5c37-4591-bed4-dc638cf0e4a5)
 ```
 sudo apt install krita
 ```
@@ -99,7 +99,7 @@ wget https://raw.githubusercontent.com/wahasa/Parrot/main/libreofficefix.sh ; ch
 ####
 <details><summary><code><b>Lollypop</b></code></summary>
 
-![Screenshot_2024-01-24-07-54-55-785_com realvnc viewer android](https://github.com/wahasa/Kali-Nethunter/assets/69626847/9aacd2d7-1a36-484e-9f5c-fe7e626ef5b2)
+![Screenshot_2024-02-25-13-42-26-898_com realvnc viewer android](https://github.com/wahasa/Kali-Nethunter/assets/69626847/02abe727-8f23-4ee1-a20b-e4d5e56912a1)
 ```
 sudo apt install lollypop
 ```
