@@ -2,7 +2,7 @@
 
 <details><summary><code><b>Blender</b></code></summary>
 
-![Screenshot_2024-02-03-08-04-31-473_com realvnc viewer android](https://github.com/wahasa/Kali-Nethunter/assets/69626847/6a8838c5-e028-49c0-8b9f-5c020db712e8)
+![Screenshot_2024-02-25-12-56-42-442_com realvnc viewer android](https://github.com/wahasa/Kali-Nethunter/assets/69626847/2d6971f9-68b0-4a6d-a470-050270a36ccf)
 ```
 sudo apt install blender
 ```
@@ -27,7 +27,7 @@ sudo apt install blender
 ####
 <details><summary><code><b>Game Classic</b></code></summary>
 
-![Screenshot_2024-01-23-14-04-35-038_com realvnc viewer android](https://github.com/wahasa/Kali-Nethunter/assets/69626847/3ab590f9-c4c1-4a17-b33c-8865b655df38)
+![Screenshot_2024-02-25-12-51-05-933_com realvnc viewer android](https://github.com/wahasa/Kali-Nethunter/assets/69626847/2b9a4da8-e827-4701-8a57-2fc5538817ac)
 ```
 sudo apt install gnome-games
 ```
@@ -45,7 +45,7 @@ sudo apt install gdebi
 ####
 <details><summary><code><b>Gedit</b></code></summary>
 
-![Screenshot_2024-01-23-14-18-50-697_com realvnc viewer android](https://github.com/wahasa/Kali-Nethunter/assets/69626847/1328c6cb-a7dd-4fae-a853-643774293818)
+![Screenshot_2024-02-25-12-53-02-290_com realvnc viewer android](https://github.com/wahasa/Kali-Nethunter/assets/69626847/98003303-2663-4a0c-9b1b-57e1390ef002)
 ```
 sudo apt install gedit
 ```
@@ -118,7 +118,7 @@ sudo apt install obs-studio
 ####
 <details><summary><code><b>Thunderbird</b></code></summary>
 
-![Screenshot_2024-01-24-11-37-31-224_com realvnc viewer android](https://github.com/wahasa/Kali-Nethunter/assets/69626847/31a243f6-57db-48bc-8d54-e3ef79ab9953)
+![Screenshot_2024-02-25-12-54-58-740_com realvnc viewer android](https://github.com/wahasa/Kali-Nethunter/assets/69626847/b13fd4db-40a5-4127-a497-9fc4b73bd92a)
 ```
 sudo apt install thunderbird
 ```
@@ -127,7 +127,7 @@ sudo apt install thunderbird
 ####
 <details><summary><code><b>Vim</b></code></summary>
 
-![Screenshot_2024-01-24-07-53-15-619_com realvnc viewer android](https://github.com/wahasa/Kali-Nethunter/assets/69626847/71d3b372-ea8e-4898-b3fc-a8fba4e1df5d)
+![Screenshot_2024-02-25-12-52-00-294_com realvnc viewer android](https://github.com/wahasa/Kali-Nethunter/assets/69626847/1b4f85d6-8bb0-423c-8d49-526a5ecf58bb)
 ```
 sudo apt install vim
 ```
