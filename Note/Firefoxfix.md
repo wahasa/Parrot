@@ -1,5 +1,5 @@
 ### Fixed Firefox Parrot
-![Screenshot_2024-01-19-08-26-52-107_com realvnc viewer android](https://github.com/wahasa/Kali-Nethunter/assets/69626847/3c1f5397-2e82-4cea-9764-8e27bcd7f6ef)
+![Screenshot_2024-02-25-12-14-31-587_com realvnc viewer android](https://github.com/wahasa/Kali-Nethunter/assets/69626847/2fe3c8bc-a5d9-4a59-ac74-a0f756d9ebd7)
 
 ---
 * Install Firefox
