@@ -21,4 +21,3 @@ wget https://raw.githubusercontent.com/wahasa/Ubuntu/main/Patch/code.desktop -P 
 
 rm code*
 rm vscodefix.sh
-#
