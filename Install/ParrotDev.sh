@@ -113,7 +113,7 @@ chmod +x $PREFIX/bin/$linux
 echo "#!/bin/bash
 touch ~/.hushlogin
 apt update && apt upgrade -y
-apt install dialog sudo -y
+apt install dialog nano sudo -y
 rm -rf ~/.bash_profile
 exit" > $folder/root/.bash_profile
 bash $linux
