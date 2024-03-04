@@ -114,6 +114,7 @@ echo "#!/bin/bash
 touch ~/.hushlogin
 apt update && apt upgrade -y
 apt install dialog nano sudo -y
+apt upgrade passwd -y
 rm -rf ~/.bash_profile
 exit" > $folder/root/.bash_profile
 bash $linux
