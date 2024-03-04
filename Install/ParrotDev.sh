@@ -37,7 +37,7 @@ if [ "$first" != 1 ];then
                 *)
                         echo "unknown architecture"; exit 1 ;;
                 esac
-                wget "https://kartolo.sby.datautama.net.id/parrot/iso/${version}/Parrot-rootfs-${version}_${archurl}.tar.xz" -O $tarball
+                wget "https://mirrors.mit.edu/parrot/iso/${version}/Parrot-rootfs-${version}_${archurl}.tar.xz" -O $tarball
         fi
         cur=`pwd`
         echo "Decompressing Rootfs, please be patient."
