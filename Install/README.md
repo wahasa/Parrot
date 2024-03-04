@@ -7,7 +7,7 @@
 <b>Source Rootfs</b>
 
 (tar.xz)</br>
-- https://kartolo.sby.datautama.net.id/parrot/iso
+- https://mirror.math.princeton.edu/pub/parrot/iso
 - http://sft.if.usp.br/parrot/iso
 - https://mirrors.mit.edu/parrot/iso
 - https://github.com/EXALAB/Anlinux-Resources/tree/master/Rootfs/Parrot
