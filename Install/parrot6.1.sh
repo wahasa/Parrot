@@ -98,13 +98,13 @@ EOM
    #Making $linux executable"
    chmod +x $bin
    #Removing image for some space"
-   rm $tarball
-   #Repositories
-echo "#Parrot Repositories
-deb https://deb.parrot.sh/direct/parrot lory main contrib non-free non-free-firmware
-deb https://deb.parrot.sh/direct/parrot lory-updates main contrib non-free non-free-firmware
-deb https://deb.parrot.sh/direct/parrot lory-security main contrib non-freenon-free-firmware
-deb https://deb.parrot.sh/direct/parrot lory-backports main contrib non-free non-free-firmware" > ~/"$folder"/etc/apt/sources.list.d/parrot.list
+   #rm $tarball
+#Repositories
+#echo "#Parrot Repositories
+#deb https://deb.parrot.sh/direct/parrot lory main contrib non-free non-free-firmware
+#deb https://deb.parrot.sh/direct/parrot lory-updates main contrib non-free non-free-firmware
+#deb https://deb.parrot.sh/direct/parrot lory-security main contrib non-free non-free-firmware
+#deb https://deb.parrot.sh/direct/parrot lory-backports main contrib non-free non-free-firmware" > ~/"$folder"/etc/apt/sources.list.d/parrot.list
 echo "export PULSE_SERVER=127.0.0.1" >> $folder/root/.bashrc
 echo '#!/bin/bash
 bash .parrot' > $PREFIX/bin/$linux
@@ -114,7 +114,6 @@ chmod +x $PREFIX/bin/$linux
    echo "Updating Parrot,.."
    echo ""
 echo "#!/bin/bash
-touch ~/.hushlogin
 apt update && apt upgrade -y
 apt install dialog nano sudo -y
 rm -rf ~/.bash_profile
@@ -124,6 +123,5 @@ bash $linux
    echo ""
    echo "You can login to Parrot with 'parrot' script next time"
    echo ""
-#rm Parrot6.1.sh
-
+#rm parrot6.1.sh
 # Script edited by 'WaHaSa', script v3-r.
