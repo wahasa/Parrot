@@ -8,27 +8,21 @@
 
 ---
 • Install Apps on Android
-- [x] [Termux](https://apkcombo.com/id/termux/com.termux)
+- [x] [Termux](https://play.google.com/store/apps/details?id=com.termux)
 - [x] [Vnc Viewer](https://play.google.com/store/apps/details?id=com.realvnc.viewer.android)
 
 ## Installation
 Copy and paste this commands to Termux
 > pkg update
 
-<details><summary><b><code>Install Parrot</code></b></summary>
+#### Install Parrot
 
-#### Parrot 6.0 (Lorikeet)
+* Parrot 6.1 (Lorikeet)
+
 Rootfs : Armhf, Arm64, i386, Amd64
 ```
-pkg install wget -y ; wget https://raw.githubusercontent.com/wahasa/Parrot/main/Install/ParrotDev.sh ; chmod +x ParrotDev.sh ; ./ParrotDev.sh
+pkg install wget -y ; wget https://raw.githubusercontent.com/wahasa/Parrot/main/Install/Parrot6.1.sh ; chmod +x Parrot6.1.sh ; ./Parrot6.1.sh
 ```
-
-#### Parrot 5.3 (Electro Ara)
-Rootfs : Armhf, Arm64, i386, Amd64
-```
-pkg install wget -y ; wget https://raw.githubusercontent.com/wahasa/Parrot/main/Install/Parrot5.3.sh ; chmod +x Parrot5.3.sh ; ./Parrot5.3.sh
-```
-</details>
 
 ---
 * Start Parrot
@@ -41,9 +35,9 @@ parrot
 exit
 ```
 
-* Delete Parrot
+* Uninstall Parrot
 ```
-rm -rf parrot-*
+rm -rf parrot-* .parrot $PREFIX/bin/$linux/parrot
 ```
 
 ---
