@@ -4,7 +4,7 @@
 
 ---
 ## Parrot on Termux Android
-![default](https://github.com/wahasa/Fedora/assets/69626847/77c94c1b-35a0-4146-a652-8f49c58f8bbf)
+![parrot6 1](https://github.com/wahasa/Project/assets/69626847/2390a223-5620-4ce6-b561-0d6b508e72ff)
 
 ---
 • Install Apps on Android
