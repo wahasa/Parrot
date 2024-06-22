@@ -2,7 +2,7 @@
 pkg install root-repo x11-repo
 pkg install proot pulseaudio -y
 termux-setup-storage
-version=5.3
+version=6.1
 #Checking Architecture
                 case `dpkg --print-architecture` in
                 aarch64)
@@ -37,11 +37,13 @@ if [ "$first" != 1 ];then
                 *)
                         echo "unknown architecture"; exit 1 ;;
                 esac
-                wget "https://mirrors.mit.edu/parrot/iso/${version}/Parrot-rootfs-${version}_${archurl}.tar.xz" -O $tarball
+                wget "https://deb.parrot.sh/direct/parrot/iso/${version}/Parrot-rootfs-${version}_${archurl}.tar.xz" -O $tarball
         fi
         cur=`pwd`
         echo "Decompressing Rootfs, please be patient."
         proot --link2symlink tar -xf ${cur}/${tarball}||:
+        cp -rf lory-$device $folder
+        rm -rf lory-$device
    fi
    echo "parrot" > ~/"$folder"/etc/hostname
    echo "127.0.0.1 localhost" > ~/"$folder"/etc/hosts
@@ -97,12 +99,13 @@ EOM
    chmod +x $bin
    #Removing image for some space"
    rm $tarball
-#Repositories
-echo "#Parrot Development
-deb https://deb.parrot.sh/direct/parrot lory main contrib non-free
-deb https://deb.parrot.sh/direct/parrot lory-updates main contrib non-free
-deb https://deb.parrot.sh/direct/parrot lory-security main contrib non-free
-deb https://deb.parrot.sh/direct/parrot lory-backports main contrib non-free" > ~/"$folder"/etc/apt/sources.list
+   #Repositories
+echo "#Parrot Repositories
+deb https://deb.parrot.sh/direct/parrot lory main contrib non-free non-free-firmware
+deb https://deb.parrot.sh/direct/parrot lory-updates main contrib non-free non-free-firmware
+deb https://deb.parrot.sh/direct/parrot lory-security main contrib non-freenon-free-firmware
+deb https://deb.parrot.sh/direct/parrot lory-backports main contrib non-free non-free-firmware" > ~/"$folder"/etc/apt/sources.list.d/parrot.list
+echo "export PULSE_SERVER=127.0.0.1" >> $folder/root/.bashrc
 echo '#!/bin/bash
 bash .parrot' > $PREFIX/bin/$linux
 chmod +x $PREFIX/bin/$linux
@@ -114,12 +117,13 @@ echo "#!/bin/bash
 touch ~/.hushlogin
 apt update && apt upgrade -y
 apt install dialog nano sudo -y
-apt upgrade passwd -y
 rm -rf ~/.bash_profile
 exit" > $folder/root/.bash_profile
 bash $linux
    clear
    echo ""
-   echo "You can now start Parrot with 'parrot' script next time"
+   echo "You can login to Parrot with 'parrot' script next time"
    echo ""
-#rm ParrotDev.sh
+#rm Parrot6.1.sh
+
+# Script edited by 'WaHaSa', script v3-r.
