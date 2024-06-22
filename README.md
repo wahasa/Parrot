@@ -21,7 +21,7 @@ Copy and paste this commands to Termux
 
 Rootfs : Armhf, Arm64, i386, Amd64
 ```
-pkg install wget -y ; wget https://raw.githubusercontent.com/wahasa/Parrot/main/Install/Parrot6.1.sh ; chmod +x Parrot6.1.sh ; ./Parrot6.1.sh
+pkg install wget -y ; wget https://raw.githubusercontent.com/wahasa/Parrot/main/Install/parrot6.1.sh ; chmod +x parrot6.1.sh ; ./parrot6.1.sh
 ```
 
 ---
@@ -35,7 +35,7 @@ parrot
 exit
 ```
 
-* Uninstall Parrot
+* Remove Parrot
 ```
 rm -rf parrot-* .parrot $PREFIX/bin/$linux/parrot
 ```
@@ -51,7 +51,7 @@ Basic commands Parrot
 
 ---
 ## Desktop Environments
-on Parrot, run this commands
+In Parrot, run this commands
 > apt update
 
 <details><summary><b><code>Install Xfce Desktop</code></b></summary>
@@ -103,7 +103,7 @@ Visit problems now in : [Issues](https://github.com/wahasa/Parrot/issues)
 
 * Start VNC Server
 
-on Parrot, run this command to start
+In Parrot, run this command to start
 ```
 vnc-start
 ```
@@ -126,7 +126,7 @@ To disconnect VNC Client, click (X) on the right.
 
 * Stop VNC Server
 
-on Parrot, run this command to stop
+In Parrot, run this command to stop
 ```
 vnc-stop
 ```
