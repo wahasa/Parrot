@@ -8,6 +8,7 @@
 
 (tar.xz)</br>
 - https://mirror.math.princeton.edu/pub/parrot/iso
+- https://deb.parrot.sh/direct/parrot/iso
 - http://sft.if.usp.br/parrot/iso
 - https://mirrors.mit.edu/parrot/iso
 - https://github.com/EXALAB/Anlinux-Resources/tree/master/Rootfs/Parrot
