@@ -115,7 +115,7 @@ chmod +x $PREFIX/bin/$linux
 echo "#!/bin/bash
 apt update && apt upgrade -y
 #apt install dialog nano sudo -y
-apt autoremove udev -y
+#apt autoremove udev -y
 apt install dialog -y
 rm -rf ~/.bash_profile
 exit" > $folder/root/.bash_profile
@@ -125,4 +125,4 @@ bash $linux
    echo "You can login to Parrot with 'parrot' script next time"
    echo ""
 #rm parrot6.1.sh
-# Script edited by 'WaHaSa', script v3-r.
+# Script edited by 'WaHaSa', Script V3-r.
