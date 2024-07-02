@@ -1,6 +1,6 @@
 #!/data/data/com.termux/files/usr/bin/bash
 pkg install root-repo x11-repo
-pkg install proot pulseaudio -y
+pkg install proot xz-utils pulseaudio -y
 termux-setup-storage
 version=6.1
 #Checking Architecture
@@ -125,4 +125,7 @@ bash $linux
    echo "You can login to Parrot with 'parrot' script next time"
    echo ""
 #rm parrot6.1.sh
+
+#
 # Script edited by 'WaHaSa', Script V3-r.
+#
