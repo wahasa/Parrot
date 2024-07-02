@@ -19,7 +19,7 @@ version=6.1
 folder=parrot-$device
 if [ -d "$folder" ]; then
         first=1
-        echo "skipping downloading"
+        echo "Skipping Downloading"
 fi
 tarball="parrot-rootfs.tar.xz"
 if [ "$first" != 1 ];then
@@ -35,7 +35,7 @@ if [ "$first" != 1 ];then
                 x86_64)
                         archurl="amd64" ;;
                 *)
-                        echo "unknown architecture"; exit 1 ;;
+                        echo "Unknown Architecture"; exit 1 ;;
                 esac
                 wget "https://deb.parrot.sh/direct/parrot/iso/${version}/Parrot-rootfs-${version}_${archurl}.tar.xz" -O $tarball
         fi
@@ -51,7 +51,7 @@ if [ "$first" != 1 ];then
 mkdir -p $folder/binds
 bin=.parrot
 linux=parrot
-echo "writing launch script"
+echo "Writing launch script"
 cat > $bin <<- EOM
 #!/bin/bash
 pulseaudio --start \
@@ -75,9 +75,9 @@ command+=" -b /dev/null:/proc/sys/kernel/cap_last_cap"
 command+=" -b /proc"
 command+=" -b /data/data/com.termux/files/usr/tmp:/tmp"
 command+=" -b $folder/root:/dev/shm"
-## uncomment the following line to have access to the home directory of termux
+#Uncomment the following line to have access to the home directory of termux
 #command+=" -b /data/data/com.termux/files/home:/root"
-## uncomment the following line to mount /sdcard directly to /
+#Uncomment the following line to mount /sdcard directly to /
 command+=" -b /sdcard"
 command+=" -w /root"
 command+=" /usr/bin/env -i"
@@ -113,9 +113,9 @@ chmod +x $PREFIX/bin/$linux
    echo "Updating Parrot,.."
    echo ""
 echo "#!/bin/bash
-apt update && apt upgrade -y
 #apt install dialog nano sudo -y
-#apt autoremove udev -y
+apt update && apt upgrade -y
+apt autoremove udev -y
 apt install dialog -y
 rm -rf ~/.bash_profile
 exit" > $folder/root/.bash_profile
@@ -127,5 +127,5 @@ bash $linux
 #rm parrot6.1.sh
 
 #
-# Script edited by 'WaHaSa', Script V3-r.
+##Script edited by 'WaHaSa', Script V3-revision.
 #
