@@ -1,5 +1,5 @@
-### Fixed Chromium Parrot
-![Screenshot_2024-02-25-12-13-26-611_com realvnc viewer android](https://github.com/wahasa/Kali-Nethunter/assets/69626847/f1733632-66cb-48bc-abea-06b1452a8f8e)
+### Fixed Chromium on Parrot
+![chromium](https://github.com/wahasa/Project/assets/69626847/117de597-339d-48a9-9ea0-7be2bf32d125)
 
 ---
 * Install Chromium
@@ -11,7 +11,7 @@
 ---
 #### Fixed chromium can't be opened
 
-* Commands in Parrot
+* Command in Parrot
 ```
 sed -i 's/chromium %U/chromium --no-sandbox --test-type %U/g' /usr/share/applications/chromium.desktop
 ```
