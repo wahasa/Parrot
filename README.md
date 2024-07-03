@@ -19,7 +19,7 @@ Copy and paste this commands to Termux
 
 * Parrot 6.1 (Lorikeet)
 
-Rootfs : Armhf, Arm64, i386, Amd64, Rpi
+Rootfs : Armhf, Arm64, i386, Amd64
 ```
 pkg install wget -y ; wget https://raw.githubusercontent.com/wahasa/Parrot/main/Install/parrot6.1.sh ; chmod +x parrot6.1.sh ; ./parrot6.1.sh
 ```
