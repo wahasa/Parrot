@@ -56,7 +56,7 @@ In Parrot, run this commands
 
 <details><summary><b><code>Install Xfce Desktop</code></b></summary>
 
-![P-Xfce](https://github.com/wahasa/Fedora/assets/69626847/8cddc54a-65b1-4dce-a07b-b7ccb45978eb)
+![xfce](https://github.com/wahasa/Project/assets/69626847/8a5d72d8-d08b-491f-a209-80e2fa68786a)
 ```
 apt install wget -y ; wget https://raw.githubusercontent.com/wahasa/Parrot/main/Desktop/de-xfce.sh ; chmod +x de-xfce.sh ; ./de-xfce.sh
 ```
@@ -64,7 +64,7 @@ apt install wget -y ; wget https://raw.githubusercontent.com/wahasa/Parrot/main/
 
 <details><summary><b><code>Install Lxde Desktop</code></b></summary>
 
-![P-Lxde](https://github.com/wahasa/Fedora/assets/69626847/ad4f0c9b-702e-4983-8c0c-d544e4aabc7f)
+![lxde](https://github.com/wahasa/Project/assets/69626847/d7e1579d-cd75-4151-832f-f869a892eeeb)
 ```
 apt install wget -y ; wget https://raw.githubusercontent.com/wahasa/Parrot/main/Desktop/de-lxde.sh ; chmod +x de-lxde.sh ; ./de-lxde.sh
 ```
@@ -72,7 +72,8 @@ apt install wget -y ; wget https://raw.githubusercontent.com/wahasa/Parrot/main/
 
 <details><summary><b><code>Install Lxqt Desktop</code></b></summary>
 
-![P-Lxqt](https://github.com/wahasa/Fedora/assets/69626847/188018fe-cf8a-4879-a634-145eb242caf5)
+
+![lxqt](https://github.com/wahasa/Project/assets/69626847/e6290702-c845-4a95-b555-65e27d36c234)
 ```
 apt install wget -y ; wget https://raw.githubusercontent.com/wahasa/Parrot/main/Desktop/de-lxqt.sh ; chmod +x de-lxqt.sh ; ./de-lxqt.sh
 ```
@@ -80,7 +81,7 @@ apt install wget -y ; wget https://raw.githubusercontent.com/wahasa/Parrot/main/
 
 <details><summary><b><code>Install Kde Desktop</code></b></summary>
 
-![P-Kde](https://github.com/wahasa/Fedora/assets/69626847/2e60f0a5-d554-4107-b4e1-9517a1e77c35)
+![kde](https://github.com/wahasa/Project/assets/69626847/efaf0ab7-2891-4314-bded-f9d9a25b4721)
 ```
 apt install wget -y ; wget https://raw.githubusercontent.com/wahasa/Parrot/main/Desktop/de-kde.sh ; chmod +x de-kde.sh ; ./de-kde.sh
 ```
