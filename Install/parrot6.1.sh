@@ -124,8 +124,7 @@ bash $linux
    echo ""
    echo "You can login to Parrot with 'parrot' script next time"
    echo ""
-#rm parrot6.1.sh
-
+   #rm parrot6.1.sh
 #
-##Script edited by 'WaHaSa', Script V3-revision.
+## Script edited by 'WaHaSa', Script V3-revision.
 #
