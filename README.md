@@ -4,7 +4,7 @@
 
 ---
 ## Parrot on Termux Android
-![parrot6 1](https://github.com/wahasa/Project/assets/69626847/2390a223-5620-4ce6-b561-0d6b508e72ff)
+![Parrot](https://github.com/wahasa/Project/assets/69626847/5913c3ce-56f1-4b7f-bae2-04142ddb0cf2)
 
 ---
 • Install Apps on Android
@@ -37,7 +37,7 @@ exit
 
 * Remove Parrot
 ```
-rm -rf parrot-* .parrot $PREFIX/bin/$linux/parrot
+rm -rf parrot-* .parrot $PREFIX/bin/parrot
 ```
 
 ---
