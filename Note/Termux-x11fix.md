@@ -1,29 +1,17 @@
-### Termux-x11 Parrot
+### Termux-x11 Parrot on Android
 
-![Screenshot_2024-02-18-19-21-29-654_com termux x11](https://github.com/wahasa/Parrot/assets/69626847/b799a6c9-5b87-4dd9-a0b9-c9874a9e2c35)
+![TermuxX11](https://github.com/wahasa/Project/assets/69626847/07a7b273-7214-4a94-98b4-90b50b4720c0)
 
 ---
 #### Commands in Termux
-
 * Install Package
 ```
-pkg install termux-x11-nightly nano -y
+pkg install termux-x11-nightly -y
 ```
 
-* Download App Termux-x11
+* App Termux-x11
 
 - [x] [Link Download](https://github.com/termux/termux-x11/releases)
-
-* Edit and remove the sign (#)
-```
-nano .termux/termux.properties
-```
-
-Save : ctrl + x, click Y enter.
-
-Example :
-
-![Screenshot_2024-01-22-07-33-37-878_com termux](https://github.com/wahasa/Kali-Nethunter/assets/69626847/4dc5b01f-ea37-4b86-80c4-e8709734ea73)
 
 ---
 Add new session :</br>
@@ -96,7 +84,7 @@ In session 2 (parrot), run this command
 > Click Ctrl+c, enter (2X)
 
 In session 1 (termux), run this command
-> Click Ctrl+c, enter
+> pkill -f com.termux.x11
 </br>
 
 ---
