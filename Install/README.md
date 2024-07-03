@@ -1,4 +1,3 @@
-
 <b>Parrot Releases</b>
 - https://parrotsec.org/blog
 
