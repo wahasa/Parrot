@@ -14,7 +14,7 @@ version=6.1
                 x86_64)
                         device="amd64" ;;
                 *)
-                        echo "unknown architecture"; exit 1 ;;
+                        echo "Unknown Architecture"; exit 1 ;;
                 esac
 folder=parrot-$device
 if [ -d "$folder" ]; then
@@ -125,6 +125,7 @@ bash $linux
    echo "You can login to Parrot with 'parrot' script next time"
    echo ""
    #rm parrot6.1.sh
+
 #
-## Script edited by 'WaHaSa', Script V3-revision.
+# Script edited by 'WaHaSa', Script V3-revision.
 #
