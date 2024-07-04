@@ -114,7 +114,8 @@ chmod +x $PREFIX/bin/$linux
    echo ""
 echo "#!/bin/bash
 apt update && apt upgrade -y
-apt autoremove udev -y ; apt install dialog -y
+apt autoremove udev -y
+apt install dialog -y
 rm -rf ~/.bash_profile
 exit" > $folder/root/.bash_profile
 bash $linux
