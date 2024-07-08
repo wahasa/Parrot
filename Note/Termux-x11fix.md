@@ -4,6 +4,8 @@
 
 ---
 #### Commands in Termux
+> pkg install nano -y
+
 * Install Package
 ```
 pkg install termux-x11-nightly -y
