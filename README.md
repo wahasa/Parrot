@@ -72,7 +72,6 @@ apt install wget -y ; wget https://raw.githubusercontent.com/wahasa/Parrot/main/
 
 <details><summary><b><code>Install Lxqt Desktop</code></b></summary>
 
-
 ![lxqt](https://github.com/wahasa/Project/assets/69626847/e6290702-c845-4a95-b555-65e27d36c234)
 ```
 apt install wget -y ; wget https://raw.githubusercontent.com/wahasa/Parrot/main/Desktop/de-lxqt.sh ; chmod +x de-lxqt.sh ; ./de-lxqt.sh
