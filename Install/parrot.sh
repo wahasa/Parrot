@@ -2,13 +2,13 @@
 pkg install root-repo x11-repo
 pkg install proot xz-utils pulseaudio -y
 termux-setup-storage
-kali=kali
-folder=kali-fs
+kali=parrot
+folder=parrot-fs
 if [ -d "$folder" ]; then
         first=1
         echo "Skipping Downloading"
 fi
-tarball="kali-rootfs.tar.xz"
+tarball="parrot-rootfs.tar.xz"
 if [ "$first" != 1 ];then
         if [ ! -f $tarball ]; then
                 echo "Download Rootfs, this may take a while base on your internet speed."
@@ -24,7 +24,7 @@ if [ "$first" != 1 ];then
                 *)
                         echo "Unknown Architecture"; exit 1 ;;
                 esac
-                wget "https://github.com/EXALAB/Anlinux-Resources/raw/master/Rootfs/Kali/${archurl}/${kali}-rootfs-${archurl}.tar.xz" -O $tarball
+                wget "https://github.com/EXALAB/Anlinux-Resources/raw/master/Rootfs/Parrot/${archurl}/${kali}-rootfs-${archurl}.tar.xz" -O $tarball
         fi
         cur=`pwd`
         mkdir -p "$folder"
@@ -33,12 +33,13 @@ if [ "$first" != 1 ];then
         proot --link2symlink tar -xf ${cur}/${tarball}||:
         cd "$cur"
    fi
-   echo "kali" > ~/"$folder"/etc/hostname
+   echo "parrot" > ~/"$folder"/etc/hostname
    echo "127.0.0.1 localhost" > ~/"$folder"/etc/hosts
    echo "nameserver 8.8.8.8" > ~/"$folder"/etc/resolv.conf
 mkdir -p $folder/binds
-bin=.kali
-linux=kali
+bin=.parrot
+linux=parrot
+echo ""
 echo "writing launch script"
 cat > $bin <<- EOM
 #!/bin/bash
@@ -93,14 +94,14 @@ EOM
    #Removing image for some space"
    #rm $tarball
 #Repositories
-echo "#Kali Repositories
-deb http://http.kali.org/kali kali-rolling main contrib non-free non-free-firmware" > ~/"$folder"/etc/apt/sources.list
+#echo "#Kali Repositories
+#deb http://http.kali.org/kali kali-rolling main contrib non-free non-free-firmware" > ~/"$folder"/etc/apt/sources.list
 echo "export PULSE_SERVER=127.0.0.1" >> $folder/etc/skel/.bashrc
 echo 'bash .kali' > $PREFIX/bin/$linux
 chmod +x $PREFIX/bin/$linux
    clear
    echo ""
-   echo "Updating Kali,.."
+   echo "Updating Parrot,.."
    echo ""
 echo "#!/bin/bash
 apt update && apt upgrade -y
@@ -111,9 +112,9 @@ exit" > $folder/root/.bash_profile
 bash $linux
    clear
    echo ""
-   echo "You can login to Kali with 'kali' script next time"
+   echo "You can login to Parrot with 'parrot' script next time"
    echo ""
-   #rm kali.sh
+   #rm parrot.sh
 
 #
 ## Script edited by 'WaHaSa', Script V3-revision.
