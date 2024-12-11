@@ -39,16 +39,16 @@ if [ "$first" != 1 ];then
                 *)
                         echo "Unknown Architecture."; exit 1 ;;
                 esac
-                
+                #wget "https://github.com/EXALAB/Anlinux-Resources/raw/refs/heads/master/Rootfs/Parrot/${archurl}/parrot-rootfs-${archurl}.tar.xz" -O $tarball
                 wget "https://deb.parrot.sh/direct/parrot/iso/${parrot}/Parrot-rootfs-${parrot}_${archurl}.tar.xz" -O $tarball
          fi
-         mkdir -p $folder
-         mkdir -p $folder/binds
+         #mkdir -p $folder
          echo "Decompressing Rootfs, please be patient."
          #proot --link2symlink tar -xpf ~/${tarball} -C ~/$folder/ --exclude='dev'||:
          proot --link2symlink tar -xpf ~/${tarball} --exclude='dev'||:
          cp -rf lory-$device $folder
          rm -rf lory-$device
+         mkdir -p $folder/binds
     fi
     echo ""
     echo "localhost" > $folder/etc/hostname
