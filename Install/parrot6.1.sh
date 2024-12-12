@@ -39,23 +39,23 @@ if [ "$first" != 1 ];then
                 *)
                         echo "Unknown Architecture."; exit 1 ;;
                 esac
-                #wget "https://github.com/EXALAB/Anlinux-Resources/raw/refs/heads/master/Rootfs/Parrot/${archurl}/parrot-rootfs-${archurl}.tar.xz" -O $tarball
-                wget "https://deb.parrot.sh/direct/parrot/iso/${parrot}/Parrot-rootfs-${parrot}_${archurl}.tar.xz" -O $tarball
+                wget -q --show-progress "https://github.com/EXALAB/Anlinux-Resources/raw/refs/heads/master/Rootfs/Parrot/${archurl}/parrot-rootfs-${archurl}.tar.xz" -O $tarball
+                #wget -q --show-progress "https://deb.parrot.sh/direct/parrot/iso/${parrot}/Parrot-rootfs-${parrot}_${archurl}.tar.xz" -O $tarball
          fi
-         #mkdir -p $folder
+         mkdir -p $folder
          echo "Decompressing Rootfs, please be patient."
-         #proot --link2symlink tar -xpf ~/${tarball} -C ~/$folder/ --exclude='dev'||:
-         proot --link2symlink tar -xpf ~/${tarball} --exclude='dev'||:
-         cp -rf lory-$device $folder
-         rm -rf lory-$device
-         mkdir -p $folder/binds
+         proot --link2symlink tar -xpf ~/${tarball} -C ~/$folder/ --exclude='dev'||:
+         #proot --link2symlink tar -xpf ~/${tarball} --exclude='dev'||:
+         #cp -rf lory-$device $folder
+         #rm -rf lory-$device
     fi
-    echo ""
+    mkdir -p $folder/binds
     echo "localhost" > $folder/etc/hostname
     echo "127.0.0.1 localhost" > $folder/etc/hosts
     echo "nameserver 8.8.8.8" > $folder/etc/resolv.conf
 bin=.parrot
 linux=parrot
+echo ""
 echo "Writing launch script"
 cat > $bin <<- EOM
 #!/data/data/com.termux/files/usr/bin/bash
@@ -116,11 +116,11 @@ EOM
      echo "Removing image for some space"
      #rm $tarball
 echo ""
-#echo "#Parrot Repositories
-#deb https://deb.parrot.sh/direct/parrot parrot main contrib non-free non-free-firmware
-#deb https://deb.parrot.sh/direct/parrot parrot-updates main contrib non-free non-free-firmware
-#deb https://deb.parrot.sh/direct/parrot parrot-security main contrib non-free non-free-firmware
-#deb https://deb.parrot.sh/direct/parrot parrot-backports main contrib non-free non-free-firmware" > $folder/etc/apt/sources.list.d/parrot.list
+echo "#Parrot Repositories
+deb https://deb.parrot.sh/direct/parrot lory main contrib non-free non-free-firmware
+deb https://deb.parrot.sh/direct/parrot lory-updates main contrib non-free non-free-firmware
+deb https://deb.parrot.sh/direct/parrot lory-security main contrib non-free non-free-firmware
+deb https://deb.parrot.sh/direct/parrot lory-backports main contrib non-free non-free-firmware" > $folder/etc/apt/sources.list.d/parrot.list
 echo "" > $folder/root/.hushlogin
 echo "export PULSE_SERVER=127.0.0.1" >> $folder/etc/skel/.bashrc
 echo 'bash .parrot' > $PREFIX/bin/$linux
@@ -130,11 +130,12 @@ chmod +x $PREFIX/bin/$linux
      echo "Updating Package,.."
      echo ""
 echo "#!/bin/bash
-#apt autoremove udev -y
 apt update && apt upgrade -y
 apt install dialog nano sudo ncurses tzdata -y
 cp .bashrc .bashrc.bak ; cp /etc/skel/.bashrc .
-#sed -i 's/32/31/g' .bashrc
+echo "Asia/Jakarta" > /etc/timezone
+ln -fs /usr/share/zoneinfo/`cat /etc/timezone` /etc/localtime
+dpkg-reconfigure -f noninteractive tzdata
 rm -rf ~/.bash_profile
 exit" > $folder/root/.bash_profile
 bash $bin
