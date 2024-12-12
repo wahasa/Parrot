@@ -131,7 +131,7 @@ chmod +x $PREFIX/bin/$linux
      echo ""
 echo "#!/bin/bash
 apt update && apt upgrade -y
-apt install dialog nano sudo ncurses tzdata -y
+apt install apt-utils dialog nano sudo tzdata -y
 cp .bashrc .bashrc.bak ; cp /etc/skel/.bashrc .
 echo "Asia/Jakarta" > /etc/timezone
 ln -fs /usr/share/zoneinfo/`cat /etc/timezone` /etc/localtime
