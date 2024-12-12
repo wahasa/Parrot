@@ -23,7 +23,7 @@ if [ -d "$folder" ]; then
         first=1
         echo "Skipping Downloading."
 fi
-tarball="parrot-rootfs.tar.xz"
+tarball="kali-rootfs.tar.xz"
 if [ "$first" != 1 ];then
         if [ ! -f $tarball ]; then
                 echo "Download Rootfs, this may take a while base on your internet speed."
