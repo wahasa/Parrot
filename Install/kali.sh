@@ -3,8 +3,8 @@ pkg install root-repo x11-repo
 pkg install proot xz-utils neofetch pulseaudio -y
 #termux-setup-storage
 echo ""
-parrot=kali
-build=2024
+kali=2024
+build=rolling
 neofetch --ascii_distro Kali -L
 case `dpkg --print-architecture` in
       aarch64)
@@ -97,7 +97,8 @@ command+=" HOME=/root"
 command+=" PATH=/usr/local/sbin:/usr/local/bin:/bin:/usr/bin:/sbin:/usr/sbin:/usr/games:/usr/local/games"
 command+=" TERM=\$TERM"
 command+=" LC_ALL=C"
-command+=" LANG=C.UTF-8"
+command+=" LANG=en_US.UTF-8"
+command+=" LANGUAGE=en_US"
 command+=" /bin/bash --login"
 com="\$@"
 if [ -z "\$1" ];then
@@ -117,8 +118,9 @@ EOM
      #rm $tarball
 echo ""
 echo "#Kali Repositories
-deb http://http.kali.org/kali kali-rolling main contrib non-free non-free-firmware" > $folder/etc/apt/sources.list.d/parrot.list
+deb http://http.kali.org/kali kali-rolling main contrib non-free non-free-firmware" > $folder/etc/apt/sources.list
 echo "" > $folder/root/.hushlogin
+#echo "TZ='Asia/Jakarta'; export TZ" > $folder/root/.profile
 echo "export PULSE_SERVER=127.0.0.1" >> $folder/etc/skel/.bashrc
 echo 'bash .kali' > $PREFIX/bin/$linux
 chmod +x $PREFIX/bin/$linux
@@ -130,6 +132,7 @@ echo "#!/bin/bash
 apt update && apt upgrade -y
 apt install apt-utils dialog nano sudo tzdata -y
 cp .bashrc .bashrc.bak ; cp /etc/skel/.bashrc .
+sed -i 's/32/31/g' .bashrc
 echo "Asia/Jakarta" > /etc/timezone
 ln -fs /usr/share/zoneinfo/`cat /etc/timezone` /etc/localtime
 dpkg-reconfigure -f noninteractive tzdata
