@@ -18,7 +18,7 @@ case `dpkg --print-architecture` in
       *)
               echo "Unknown Architecture."; exit 1 ;;
 esac
-folder=parrot-$device
+folder=kali-$device
 if [ -d "$folder" ]; then
         first=1
         echo "Skipping Downloading."
