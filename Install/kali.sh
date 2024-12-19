@@ -120,7 +120,7 @@ echo ""
 echo "#Kali Repositories
 deb http://http.kali.org/kali kali-rolling main contrib non-free non-free-firmware" > $folder/etc/apt/sources.list
 echo "" > $folder/root/.hushlogin
-#echo "TZ='Asia/Jakarta'; export TZ" > $folder/root/.profile
+#echo "TZ='Asia/Jakarta'; export TZ" >> $folder/root/.profile
 echo "export PULSE_SERVER=127.0.0.1" >> $folder/etc/skel/.bashrc
 echo 'bash .kali' > $PREFIX/bin/$linux
 chmod +x $PREFIX/bin/$linux
@@ -129,13 +129,10 @@ chmod +x $PREFIX/bin/$linux
      echo "Updating Package,.."
      echo ""
 echo "#!/bin/bash
+cp .bashrc .bashrc.bak
 apt update && apt upgrade -y
 apt install apt-utils dialog nano sudo tzdata -y
-cp .bashrc .bashrc.bak ; cp /etc/skel/.bashrc .
-sed -i 's/32/31/g' .bashrc
-echo "Asia/Jakarta" > /etc/timezone
-ln -fs /usr/share/zoneinfo/`cat /etc/timezone` /etc/localtime
-dpkg-reconfigure -f noninteractive tzdata
+cp /etc/skel/.bashrc . ; sed -i 's/32/31/g' .bashrc
 rm -rf ~/.bash_profile
 exit" > $folder/root/.bash_profile
 bash $bin
