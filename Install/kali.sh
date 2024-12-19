@@ -44,8 +44,9 @@ if [ "$first" != 1 ];then
          fi
          mkdir -p $folder
          echo "Decompressing Rootfs, please be patient."
-         proot --link2symlink tar -xpf ~/${tarball} -C ~/$folder/ --exclude='dev'||:
+         #proot --link2symlink tar -xpf ~/${tarball} -C ~/$folder/ --exclude='dev'||:
          #proot --link2symlink tar -xpf ~/${tarball} --exclude='dev'||:
+         proot --link2symlink tar -xpf ~/${tarball} 2> /dev/null || :
          #cp -rf lory-$device $folder
          #rm -rf lory-$device
     fi
@@ -120,7 +121,7 @@ echo ""
 echo "#Kali Repositories
 deb http://http.kali.org/kali kali-rolling main contrib non-free non-free-firmware" > $folder/etc/apt/sources.list
 echo "" > $folder/root/.hushlogin
-#echo "TZ='Asia/Jakarta'; export TZ" >> $folder/root/.profile
+echo "TZ='Asia/Jakarta'; export TZ" >> $folder/root/.profile
 echo "export PULSE_SERVER=127.0.0.1" >> $folder/etc/skel/.bashrc
 echo 'bash .kali' > $PREFIX/bin/$linux
 chmod +x $PREFIX/bin/$linux
@@ -130,9 +131,10 @@ chmod +x $PREFIX/bin/$linux
      echo ""
 echo "#!/bin/bash
 cp .bashrc .bashrc.bak
-apt update && apt upgrade -y
+apt update ; apt upgrade -y
 apt install apt-utils dialog nano sudo tzdata -y
 cp /etc/skel/.bashrc . ; sed -i 's/32/31/g' .bashrc
+apt full-upgrade -y ; apt autoremove -y
 rm -rf ~/.bash_profile
 exit" > $folder/root/.bash_profile
 bash $bin
