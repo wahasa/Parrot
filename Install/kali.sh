@@ -39,8 +39,8 @@ if [ "$first" != 1 ];then
                 *)
                         echo "Unknown Architecture."; exit 1 ;;
                 esac
-                wget -q --show-progress "https://github.com/EXALAB/Anlinux-Resources/raw/refs/heads/master/Rootfs/Kali/${archurl}/kali-rootfs-${archurl}.tar.xz" -O $tarball
-                #wget -q --show-progress "https://deb.parrot.sh/direct/parrot/iso/${parrot}/Parrot-rootfs-${parrot}_${archurl}.tar.xz" -O $tarball
+                #wget -q --show-progress "https://github.com/EXALAB/Anlinux-Resources/raw/refs/heads/master/Rootfs/Kali/${archurl}/kali-rootfs-${archurl}.tar.xz" -O $tarball
+                wget -q --show-progress "https://kali.download/nethunter-images/current/rootfs/kali-nethunter-rootfs-nano-${archurl}.tar.xz" -O $tarball
          fi
          #mkdir -p $folder
          echo "Decompressing Rootfs, please be patient."
@@ -130,6 +130,7 @@ echo "#!/bin/bash
 apt update ; apt upgrade -y
 apt install apt-utils dialog nano sudo tzdata -y
 cp .bashrc .bashrc.bak ; cp /etc/skel/.bashrc .
+echo 'kali    ALL=(ALL:ALL) ALL' >> /etc/sudoers
 #sed -i 's/32/31/g' .bashrc ; apt full-upgrade -y
 apt autoremove -y
 rm -rf ~/.bash_profile
