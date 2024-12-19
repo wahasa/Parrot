@@ -124,6 +124,7 @@ deb https://deb.parrot.sh/direct/parrot lory-security main contrib non-free non-
 deb https://deb.parrot.sh/direct/parrot lory-backports main contrib non-free non-free-firmware" > $folder/etc/apt/sources.list.d/parrot.list
 rm -rf $folder/etc/apt/sources.list ; touch $folder/etc/apt/sources.list
 echo "" > $folder/root/.hushlogin
+echo "TZ='Asia/Jakarta'; export TZ" >> $folder/root/.profile
 echo "export PULSE_SERVER=127.0.0.1" >> $folder/etc/skel/.bashrc
 echo 'bash .parrot' > $PREFIX/bin/$linux
 chmod +x $PREFIX/bin/$linux
@@ -135,7 +136,7 @@ echo "#!/bin/bash
 apt update && apt upgrade -y
 apt install apt-utils dialog nano sudo tzdata -y
 cp .bashrc .bashrc.bak ; cp /etc/skel/.bashrc .
-#echo "Asia/Jakarta" > /etc/timezone
+#echo 'Asia/Jakarta' > /etc/timezone
 #ln -fs /usr/share/zoneinfo/`cat /etc/timezone` /etc/localtime
 #dpkg-reconfigure -f noninteractive tzdata
 apt upgrade passwd -y
