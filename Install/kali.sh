@@ -42,13 +42,10 @@ if [ "$first" != 1 ];then
                 wget -q --show-progress "https://github.com/EXALAB/Anlinux-Resources/raw/refs/heads/master/Rootfs/Kali/${archurl}/kali-rootfs-${archurl}.tar.xz" -O $tarball
                 #wget -q --show-progress "https://deb.parrot.sh/direct/parrot/iso/${parrot}/Parrot-rootfs-${parrot}_${archurl}.tar.xz" -O $tarball
          fi
-         mkdir -p $folder
+         #mkdir -p $folder
          echo "Decompressing Rootfs, please be patient."
-         #proot --link2symlink tar -xpf ~/${tarball} -C ~/$folder/ --exclude='dev'||:
-         #proot --link2symlink tar -xpf ~/${tarball} --exclude='dev'||:
-         proot --link2symlink tar -xpf ~/${tarball} 2> /dev/null || :
-         #cp -rf lory-$device $folder
-         #rm -rf lory-$device
+         #proot --link2symlink tar -xpf ~/${tarball} -C ~/$folder/ --exclude='dev' ||:
+         proot --link2symlink tar -xpf ~/${tarball} 2> /dev/null ||:
     fi
     mkdir -p $folder/binds
     echo "localhost" > $folder/etc/hostname
@@ -130,11 +127,11 @@ chmod +x $PREFIX/bin/$linux
      echo "Updating Package,.."
      echo ""
 echo "#!/bin/bash
-cp .bashrc .bashrc.bak
 apt update ; apt upgrade -y
 apt install apt-utils dialog nano sudo tzdata -y
-cp /etc/skel/.bashrc . ; sed -i 's/32/31/g' .bashrc
-apt full-upgrade -y ; apt autoremove -y
+cp .bashrc .bashrc.bak ; cp /etc/skel/.bashrc .
+#sed -i 's/32/31/g' .bashrc ; apt full-upgrade -y
+apt autoremove -y
 rm -rf ~/.bash_profile
 exit" > $folder/root/.bash_profile
 bash $bin
