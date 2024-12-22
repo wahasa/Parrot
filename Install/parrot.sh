@@ -136,9 +136,6 @@ echo "#!/bin/bash
 apt update && apt upgrade -y
 apt install apt-utils dialog nano sudo tzdata -y
 cp .bashrc .bashrc.bak ; cp /etc/skel/.bashrc .
-#echo 'Asia/Jakarta' > /etc/timezone
-#ln -fs /usr/share/zoneinfo/`cat /etc/timezone` /etc/localtime
-#dpkg-reconfigure -f noninteractive tzdata
 apt upgrade passwd -y
 rm -rf ~/.bash_profile
 exit" > $folder/root/.bash_profile
