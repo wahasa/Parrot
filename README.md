@@ -1,28 +1,29 @@
-
 <p align="center">My Channel</br><b>
-| <a href="https://discord.gg/GCehyym">Discord</a> | <a href="https://youtube.com/channel/UC3sLb7eZCu72iv3G1yUhUHQ">YouTube</a> |</b></p>
+| <a href="https://discord.gg/GCehyym">Discord</a> | <a href="https://youtube.com/@layargeser">YouTube</a> |</b></p>
 
 ---
 ## Parrot on Termux Android
-![Parrot](https://github.com/user-attachments/assets/83ebf375-e422-4b0b-aef6-b3c701fd0ea3)
+<img src="">
 
----
-• Install Apps on Android
+* Install Apps on Android
 - [x] [Termux](https://play.google.com/store/apps/details?id=com.termux)
-- [x] [Vnc Viewer](https://play.google.com/store/apps/details?id=com.realvnc.viewer.android)
+- [x] [Termux-x11](https://github.com/termux/termux-x11/releases)
 
-## Installation
+### Installation
+
 Copy and paste this commands to Termux
-> pkg update
+> apt update
 
-#### Install Parrot
+<details><summary><b><code>Install Parrot</code></b></summary></br>
 
-* Parrot 6.1 (Lorikeet)
+> apt install wget
+- [x] Parrot (Latest-release)
 
 Rootfs : Armhf, Arm64, i386, Amd64
 ```
 pkg install wget -y ; wget https://raw.githubusercontent.com/wahasa/Parrot/main/Install/parrot6.1.sh ; chmod +x parrot6.1.sh ; ./parrot6.1.sh
 ```
+</details>
 
 ---
 * Start Parrot
@@ -47,7 +48,6 @@ Basic commands Parrot
 > apt search (pkg) : Search package.</br>
 > apt install (pkg) : Install package.</br>
 > apt autoremove (pkg) : Delete pkg.</br>
-> apt -h : Help all commands.
 
 ---
 ## Desktop Environments
