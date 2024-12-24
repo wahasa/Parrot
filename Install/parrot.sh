@@ -3,7 +3,7 @@ pkg install root-repo x11-repo
 pkg install proot xz-utils neofetch pulseaudio -y
 #termux-setup-storage
 echo ""
-parrot=6.1
+parrot=2024
 build=rolling
 neofetch --ascii_distro Parrot -L
 case `dpkg --print-architecture` in
@@ -40,7 +40,7 @@ if [ "$first" != 1 ];then
                         echo "Unknown Architecture."; exit 1 ;;
                 esac
                 wget -q --show-progress "https://github.com/EXALAB/Anlinux-Resources/raw/refs/heads/master/Rootfs/Parrot/${archurl}/parrot-rootfs-${archurl}.tar.xz" -O $tarball
-                #wget -q --show-progress "https://deb.parrot.sh/direct/parrot/iso/${parrot}/Parrot-rootfs-${parrot}_${archurl}.tar.xz" -O $tarball
+                #wget -q --show-progress "https://deb.parrot.sh/direct/parrot/iso/${parrot}/Parrot-rootfs-6.1_${archurl}.tar.xz" -O $tarball
          fi
          mkdir -p $folder
          echo "Decompressing Rootfs, please be patient."
