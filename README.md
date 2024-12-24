@@ -21,17 +21,17 @@ Copy and paste this commands to Termux
 
 Rootfs : Armhf, Arm64, i386, Amd64
 ```
-pkg install wget -y ; wget https://raw.githubusercontent.com/wahasa/Parrot/main/Install/parrot6.1.sh ; chmod +x parrot6.1.sh ; ./parrot6.1.sh
+wget https://raw.githubusercontent.com/wahasa/Parrot/refs/heads/main/Install/parrot.sh ; chmod +x parrot.sh ; ./parrot.sh
 ```
 </details>
 
 ---
-* Start Parrot
+* Login Parrot
 ```
 parrot
 ```
 
-* Stop Parrot
+* Logout Parrot
 ```
 exit
 ```
@@ -50,95 +50,55 @@ Basic commands Parrot
 > apt autoremove (pkg) : Delete pkg.</br>
 
 ---
-## Desktop Environments
-In Parrot, run this commands
-> apt update
+### Install Desktop Environments
 
-<details><summary><b><code>Install Xfce Desktop</code></b></summary>
+In Arch, run this commands
+> pacman -Syu
 
-![xfce](https://github.com/wahasa/Project/assets/69626847/8a5d72d8-d08b-491f-a209-80e2fa68786a)
+<details><summary><b><code>Xfce Desktop</code></b></summary></br>
+
 ```
-apt install wget -y ; wget https://raw.githubusercontent.com/wahasa/Parrot/main/Desktop/de-xfce.sh ; chmod +x de-xfce.sh ; ./de-xfce.sh
-```
-</details>
-
-<details><summary><b><code>Install Lxde Desktop</code></b></summary>
-
-![lxde](https://github.com/wahasa/Project/assets/69626847/d7e1579d-cd75-4151-832f-f869a892eeeb)
-```
-apt install wget -y ; wget https://raw.githubusercontent.com/wahasa/Parrot/main/Desktop/de-lxde.sh ; chmod +x de-lxde.sh ; ./de-lxde.sh
+pacman -S xfce4 xfce4-goodies network-manager-applet engrampa firefox pulseaudio gst-libav dbus --noconfirm
 ```
 </details>
 
-<details><summary><b><code>Install Lxqt Desktop</code></b></summary>
+<details><summary><b><code>Lxde Desktop</code></b></summary></br>
 
-![lxqt](https://github.com/wahasa/Project/assets/69626847/e6290702-c845-4a95-b555-65e27d36c234)
 ```
-apt install wget -y ; wget https://raw.githubusercontent.com/wahasa/Parrot/main/Desktop/de-lxqt.sh ; chmod +x de-lxqt.sh ; ./de-lxqt.sh
+pacman -S lxde network-manager-applet firefox pulseaudio dbus --noconfirm ; mv /usr/bin/lxpolkit /usr/bin/lxpolkit.bak
 ```
 </details>
 
-<details><summary><b><code>Install Kde Desktop</code></b></summary>
+<details><summary><b><code>Lxqt Desktop</code></b></summary></br>
 
-![kde](https://github.com/wahasa/Project/assets/69626847/efaf0ab7-2891-4314-bded-f9d9a25b4721)
 ```
-apt install wget -y ; wget https://raw.githubusercontent.com/wahasa/Parrot/main/Desktop/de-kde.sh ; chmod +x de-kde.sh ; ./de-kde.sh
+pacman -S lxqt xscreensaver firefox pulseaudio dbus --noconfirm
+```
+</details>
+
+<details><summary><b><code>Kde- Desktop</code></b></summary></br>
+
+```
+pacman -S plasma kio-extras firefox pulseaudio dbus --noconfirm
 ```
 </details>
 
 ---
 Feature
-- [x] Fixed Sound
+- [x] Fixed Sound Output
 - [x] Access to Sdcard
 - [x] Access to Termux-x11
-- [x] Fixed Browser Crash  | [Click Here >](https://github.com/wahasa/Parrot/tree/main/Note)
-- [x] Install Applications | [Click Here >](https://github.com/wahasa/Parrot/tree/main/Apps)
+- [x] Add New Username     | [Click Here >](https://github.com/wahasa/Parrot/blob/main/Patch/AddUser.md#add-username-on-parrot)
+- [x] Fixed Browser Crash  | [Click Here >](https://github.com/wahasa/Parrot/blob/main/Apps/Firefoxfix.md#fixed-firefox-on-parrot)
+- [x] Install Applications | [Click Here >](https://github.com/wahasa/Parrot/tree/main/Apps#list-applications)
 
 Visit problems now in : [Issues](https://github.com/wahasa/Parrot/issues)
 
 ---
-## VNC Viewer
-<details></br>
-<summary><b><code>VNC Viewer Android</code></b></summary>
-
-* Start VNC Server
-
-In Parrot, run this command to start
-```
-vnc-start
-```
-
-* Open Vnc Viewer
-
-Add (+) VNC Client to connect, fill with :
-
-Address
-```
-localhost:1
-```
-
-Name
-```
-Parrot Desktop
-```
-
-To disconnect VNC Client, click (X) on the right.
-
-* Stop VNC Server
-
-In Parrot, run this command to stop
-```
-vnc-stop
-```
-</details>
-
----
-## Termux-x11
-<details></br>
-<summary><b><code>Termux-x11 Android</code></b></summary>
-
-[> Click Here <](https://github.com/wahasa/Parrot/blob/main/Note/Termux-x11fix.md)
-</details>
+### Run Desktop Environments
+- [x] With Termux-X11  | [Click Here >](https://github.com/wahasa/Parrot/blob/main/Patch/Termux-X11.md#termux-x11-on-parrot)
+- [x] With Rvnc Viewer | [Click Here >](https://github.com/wahasa/Parrot/blob/main/Patch/RvncViewer.md#rvnc-viewer-on-parrot)
+- [x] With Bvnc Viewer | [Click Here >](https://github.com/wahasa/Parrot/blob/main/Patch/BvncViewer.md#bvnc-viewer-on-parrot)
 </br>
 
 ---
