@@ -52,34 +52,46 @@ Basic commands Parrot
 ---
 ### Install Desktop Environments
 
-In Arch, run this commands
-> pacman -Syu
+In Parrot, run this commands
+> apt update
 
 <details><summary><b><code>Xfce Desktop</code></b></summary></br>
 
 ```
-pacman -S xfce4 xfce4-goodies network-manager-applet engrampa firefox pulseaudio gst-libav dbus --noconfirm
+apt install udisks2 -y ; echo "" > /var/lib/dpkg/info/udisks2.postinst ; apt-mark hold udisks2
+```
+```
+apt install xfce4 xfce4-goodies xfce4-terminal parole gst-libav -y ; apt install tigervnc-standalone-server dbus-x11 -y
 ```
 </details>
 
 <details><summary><b><code>Lxde Desktop</code></b></summary></br>
 
 ```
-pacman -S lxde network-manager-applet firefox pulseaudio dbus --noconfirm ; mv /usr/bin/lxpolkit /usr/bin/lxpolkit.bak
+apt install udisks2 -y ; echo "" > /var/lib/dpkg/info/udisks2.postinst ; apt-mark hold udisks2
+```
+```
+apt install lxde lxterminal -y ; apt install tigervnc-standalone-server dbus-x11 -y ; mv /usr/bin/lxpolkit /usr/bin/lxpolkit.bak
 ```
 </details>
 
 <details><summary><b><code>Lxqt Desktop</code></b></summary></br>
 
 ```
-pacman -S lxqt xscreensaver firefox pulseaudio dbus --noconfirm
+apt install udisks2 -y ; echo "" > /var/lib/dpkg/info/udisks2.postinst ; apt-mark hold udisks2
+```
+```
+apt install lxqt qterminal -y ; apt install tigervnc-standalone-server dbus-x11 -y
 ```
 </details>
 
 <details><summary><b><code>Kde- Desktop</code></b></summary></br>
 
 ```
-pacman -S plasma kio-extras firefox pulseaudio dbus --noconfirm
+apt install udisks2 -y ; echo "" > /var/lib/dpkg/info/udisks2.postinst ; apt-mark hold udisks2
+```
+```
+apt install kde-plasma-desktop konsole -y ; apt install tigervnc-standalone-server dbus-x11 -y
 ```
 </details>
 
